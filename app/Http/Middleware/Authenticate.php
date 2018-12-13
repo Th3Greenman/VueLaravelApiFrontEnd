@@ -1,6 +1,6 @@
 <?php
 
-namespace testing\Http\Middleware;
+namespace Articles\Http\Middleware;
 
 use Illuminate\Auth\Middleware\Authenticate as Middleware;
 

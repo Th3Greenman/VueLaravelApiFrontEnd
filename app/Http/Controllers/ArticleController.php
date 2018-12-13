@@ -1,11 +1,11 @@
 <?php
 
-namespace testing\Http\Controllers;
+namespace Articles\Http\Controllers;
 
 use Illuminate\Http\Request;
-use testing\Http\Requestes;
-use testing\Article; 
-use testing\Http\Resources\Article as ArticleResource;
+use Articles\Http\Requestes;
+use Articles\Article; 
+use Articles\Http\Resources\Article as ArticleResource;
 
 class ArticleController extends Controller
 {
@@ -17,7 +17,7 @@ class ArticleController extends Controller
     public function index()
     {
         // Get articles
-        $articles = Article::paginate(15);
+        $articles = Article::orderBy('created_at' , 'desc')->paginate(5);
         // Return collection of articles as a resource
         return ArticleResource::collection($articles);
     }

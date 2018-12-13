@@ -1,6 +1,6 @@
 <?php
 
-namespace testing\Http\Resources;
+namespace Articles\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 

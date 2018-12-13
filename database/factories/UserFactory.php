@@ -9,11 +9,11 @@ use Faker\Generator as Faker;
 |
 | This directory should contain each of the model factory definitions for
 | your application. Factories provide a convenient way to generate new
-| model instances for testing / seeding your application's database.
+| model instances for Articles / seeding your application's database.
 |
 */
 
-$factory->define(testing\User::class, function (Faker $faker) {
+$factory->define(Articles\User::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,

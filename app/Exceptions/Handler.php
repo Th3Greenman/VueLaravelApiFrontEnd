@@ -1,6 +1,6 @@
 <?php
 
-namespace testing\Exceptions;
+namespace Articles\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
