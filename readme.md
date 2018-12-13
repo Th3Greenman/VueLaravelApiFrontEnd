@@ -2,10 +2,8 @@
 
 ```
 
-Laravel 5.7 API uses the API resources, This is an API for an article CRUD app. 
+Laravel 5.7 API uses the API resources, This is the CRUD app connected to the API. 
 Based on the one from Traversy Media.
-
-https://www.youtube.com/watch?v=4pc6cgisbKE 
 
 ```
 
@@ -23,26 +21,5 @@ php artisan migrate --seed
 
 # if you get the encyption key error run
 php artisan key:generate
-
-```
-
-
-# Endpoints
-
-```
-# List articles
-GET / api/articles
-
-# List single article
-GET article/{id}
-
-# Create new article
-POST article // Needs a title and body
-
-# Update article
-PUT article  // Needs a id and title and body
-
-# Delete article
-DELETE article/{id}
 
 ```
